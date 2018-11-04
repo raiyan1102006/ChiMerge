@@ -13,7 +13,17 @@ Once the libraries and environments are set up, the code can by run by executing
 python ChiMerge.py
 ```
 
-## Description
+## Algorithm
+ChiMerge works in the following manner:
+1. Sort the data based on the attribute’s values in an ascending order.
+2. Define each distinct value in the attribute as an interval on its own.
+3. Construct a frequency table where the various class frequencies for each distinct attribute
+value is computed.
+4. Calculate the Chi square values for each of the adjacent rows (intervals) in the frequency
+table.
+5. Merge adjacent rows with the smallest Chi square value. This leads to a new frequency
+table.
+6. Repeat steps 4 & 5 until stopping condition is met.
 
 ## References
 [1] Kerber, R., 1992, July. Chimerge: Discretization of numeric attributes. In *Proceedings of the tenth national conference on Artificial intelligence* (pp. 123-128). AAAI Press.
