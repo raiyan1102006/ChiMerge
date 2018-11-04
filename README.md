@@ -9,7 +9,7 @@ I have used Python 3.6.3 to develop and test the code, and have used only popula
 
 Once the libraries and environments are set up, the code can by run by executing 
 
-```bash
+```
 python ChiMerge.py
 ```
 
@@ -24,6 +24,8 @@ table.
 5. Merge adjacent rows with the smallest Chi square value. This leads to a new frequency
 table.
 6. Repeat steps 4 & 5 until stopping condition is met.
+
+As the stopping condition, I've used max-interval = 6.
 
 ## References
 [1] Kerber, R., 1992, July. Chimerge: Discretization of numeric attributes. In *Proceedings of the tenth national conference on Artificial intelligence* (pp. 123-128). AAAI Press.
