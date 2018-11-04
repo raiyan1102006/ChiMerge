@@ -15,6 +15,8 @@ python ChiMerge.py
 
 ## Algorithm
 
+The program takes the dataset and the max_interval as the input, and gives the split-points and final intervals as output. As the stopping condition, I've used max_interval = 6.
+
 ChiMerge works in the following manner:
 1. Sort the data based on the attribute’s values in an ascending order.
 2. Define each distinct value in the attribute as an interval on its own.
@@ -26,7 +28,7 @@ table.
 table.
 6. Repeat steps 4 & 5 until stopping condition is met.
 
-The program takes the dataset and the max_interval as the input, and gives the split-points and final intervals as output. As the stopping condition, I've used max_interval = 6.
+
 
 ## References
 [1] Kerber, R., 1992, July. Chimerge: Discretization of numeric attributes. In *Proceedings of the tenth national conference on Artificial intelligence* (pp. 123-128). AAAI Press.
